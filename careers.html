@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join TSF Media team! Explore career opportunities in web development, digital marketing, graphics design, SEO, content writing, and more. Apply now with your resume.">
+    <meta name="keywords" content="careers, jobs, employment, TSF Media, digital marketing jobs, web developer jobs, graphic designer jobs">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="The Social Flex Media">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Careers at TSF Media - Join Our Team">
+    <meta property="og:description" content="Explore exciting career opportunities at TSF Media. We're hiring web developers, digital marketers, designers, and more.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="Careers at TSF Media">
+    <meta property="twitter:description" content="Join our team! Explore career opportunities in digital marketing, web development, and design.">
+    
+    <title>Careers - TSF Media | Join Our Team</title>
+    <link rel="icon" type="image/jpeg" href="LOGOTSF.jpg">
+    <link rel="canonical" href="https://tsfmedia.com/careers.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #000000;
+        }
+
+        .careers-hero {
+            padding: 80px 50px 40px;
+            text-align: center;
+            background: linear-gradient(135deg, #ff0000 0%, #8b0000 40%, #000000 100%);
+        }
+
+        .careers-hero h1 {
+            font-size: 48px;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .careers-hero p {
+            font-size: 18px;
+            color: #f2f2f2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .careers-section {
+            padding: 60px 50px 100px;
+        }
+
+        .careers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .career-card {
+            background: #0f0f0f;
+            border: 1px solid #1f1f1f;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+            transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+        }
+
+        .career-card:hover {
+            transform: translateY(-6px);
+            border-color: #ff0000;
+            box-shadow: 0 14px 30px rgba(255, 0, 0, 0.25);
+        }
+
+        .career-card h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: #ff0000;
+        }
+
+        .career-card p {
+            color: #cccccc;
+            line-height: 1.5;
+            margin-bottom: 18px;
+        }
+
+        .apply-btn {
+            display: inline-block;
+            padding: 12px 18px;
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.25s, box-shadow 0.25s;
+            text-decoration: none;
+        }
+
+        .apply-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+        }
+
+        /* Modal tweaks specific to careers */
+        .modal-content .modal-header h2 span {
+            color: #ffffff;
+            font-size: 18px;
+            display: block;
+            margin-top: 6px;
+        }
+
+        .form-group input[type="file"] {
+            padding: 10px;
+            background: #111;
+            color: #ffffff;
+            cursor: pointer;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .form-group input[type="file"]::file-selector-button {
+            background: #ff0000;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .form-group input[type="file"]::file-selector-button:hover {
+            background: #cc0000;
+        }
+
+        /* Logo link styling */
+        nav > a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        nav > a:hover {
+            opacity: 0.9;
+        }
+
+        .logo-title {
+            font-size: 24px;
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .careers-hero {
+                padding: 60px 20px 30px;
+            }
+
+            .careers-hero h1 {
+                font-size: 32px;
+            }
+
+            .careers-hero p {
+                font-size: 16px;
+            }
+
+            .careers-section {
+                padding: 40px 20px 60px;
+            }
+
+            .careers-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .career-card {
+                padding: 20px;
+            }
+
+            .career-card h3 {
+                font-size: 20px;
+            }
+
+            nav {
+                padding: 15px 20px;
+                flex-wrap: wrap;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .nav-links li {
+                font-size: 13px;
+            }
+
+            nav > a {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .modal-content {
+                width: 95%;
+                padding: 30px 20px;
+                margin: 20px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .careers-hero h1 {
+                font-size: 28px;
+            }
+
+            .careers-hero p {
+                font-size: 14px;
+            }
+
+            .career-card h3 {
+                font-size: 18px;
+            }
+
+            .career-card p {
+                font-size: 14px;
+            }
+
+            .apply-btn {
+                padding: 10px 16px;
+                font-size: 14px;
+            }
+
+            .nav-links {
+                gap: 10px;
+            }
+
+            .nav-links a {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img class=image src="LOGOTSF.jpg" alt="TSF Media Logo" width="58px" height="58px">
+                </div>
+                <div>
+                    <div class="logo-title">TSFMEDIA</div>
+                    <div class="logo-subtitle">The Social Flex Media</div>
+                </div>
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html#about" aria-label="About Us Section">ABOUT US</a></li>
+            <li><a href="index.html#services" aria-label="Services Section">SERVICES</a></li>
+            <li><a href="work.html" aria-label="View Our Work Portfolio">WORK</a></li>
+            <li><a href="index.html#portfolio" aria-label="Portfolio Section">PORTFOLIO</a></li>
+            <li><a href="careers.html" aria-label="Career Opportunities">CAREERS</a></li>
+            <li><a href="index.html#contact" aria-label="Contact Us">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="careers-hero">
+        <h1>Join the TSF Media Team</h1>
+        <p>Be part of an agile crew delivering bold digital outcomes. Browse our open roles and apply with your resume.</p>
+    </section>
+
+    <!-- Careers List -->
+    <section class="careers-section">
+        <div class="careers-grid">
+            <div class="career-card">
+                <h3>Web Developer</h3>
+                <p>Build fast, reliable web experiences using modern stacks. Own features end-to-end and ship performant, accessible interfaces.</p>
+                <button class="apply-btn" data-role="Web Developer">Apply</button>
+            </div>
+            <div class="career-card">
+                <h3>Digital Marketer</h3>
+                <p>Plan and execute data-driven campaigns across paid and organic channels, optimizing for reach, engagement, and conversions.</p>
+                <button class="apply-btn" data-role="Digital Marketer">Apply</button>
+            </div>
+            <div class="career-card">
+                <h3>Graphics Designer</h3>
+                <p>Create striking visuals, social creatives, and brand assets that keep our clients memorable across every touchpoint.</p>
+                <button class="apply-btn" data-role="Graphics Designer">Apply</button>
+            </div>
+            <div class="career-card">
+                <h3>SEO Specialist</h3>
+                <p>Grow organic visibility with technical audits, content strategy, and on-page/off-page optimizations grounded in measurable results.</p>
+                <button class="apply-btn" data-role="SEO Specialist">Apply</button>
+            </div>
+            <div class="career-card">
+                <h3>Content Writer</h3>
+                <p>Craft engaging copy for web, social, and campaigns that informs, converts, and strengthens each brand voice.</p>
+                <button class="apply-btn" data-role="Content Writer">Apply</button>
+            </div>
+            <div class="career-card">
+                <h3>Project Manager</h3>
+                <p>Lead cross-functional teams, own timelines, and ensure projects launch on scope, on time, and on budget.</p>
+                <button class="apply-btn" data-role="Project Manager">Apply</button>
+            </div>
+            <div class="career-card">
+                <h3>Coordinator</h3>
+                <p>Keep deliverables organized, track milestones, and support client communications to keep every engagement running smoothly.</p>
+                <button class="apply-btn" data-role="Coordinator">Apply</button>
+            </div>
+            <div class="career-card">
+                <h3>HR Specialist</h3>
+                <p>Own talent pipelines, onboarding, and employee engagement programs that build a thriving culture.</p>
+                <button class="apply-btn" data-role="HR Specialist">Apply</button>
+            </div>
+            <div class="career-card">
+                <h3>BDE (Business Development Executive)</h3>
+                <p>Identify opportunities, nurture leads, and translate client needs into winning proposals and lasting partnerships.</p>
+                <button class="apply-btn" data-role="BDE (Business Development Executive)">Apply</button>
+            </div>
+            <div class="career-card">
+                <h3>Telecaller</h3>
+                <p>Engage prospects with clear, confident communication, qualify leads, and schedule high-intent follow-ups.</p>
+                <button class="apply-btn" data-role="Telecaller">Apply</button>
+            </div>
+            <div class="career-card">
+                <h3>Tester</h3>
+                <p>Safeguard quality through test planning, exploratory testing, and reporting that keeps releases stable.</p>
+                <button class="apply-btn" data-role="Tester">Apply</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Modal -->
+    <div class="modal-overlay" id="applyModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeApplyModal">&times;</span>
+            <div class="modal-header">
+                <h2>Apply Now <span id="roleLabel"></span></h2>
+                <p>Share your details and upload your resume. We'll get back to you soon.</p>
+            </div>
+            <form id="applyForm" action="https://formsubmit.co/thesocialflexmedia888@gmail.com" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="_to" value="thesocialflexmedia888@gmail.com">
+                <input type="hidden" name="_subject" id="emailSubject" value="New Job Application">
+                <input type="hidden" name="_replyto" id="replyTo" value="">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="role" id="roleField">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="applicantEmail" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="4" name="message" placeholder="Tell us why you'd be a great fit" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Apply</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section footer-logo-section">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">
+                        <img src="LOGOTSF.jpg" alt="TSF Logo" style="width: 100%; height: 100%; border-radius: 15px; object-fit: cover;">
+                    </div>
+                    <h3>TSFMEDIA</h3>
+                </div>
+                <p style="color: #ccc;">Your Digital Marketing Partner.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://wa.me/917987508554" target="_blank" rel="noopener noreferrer" class="social-icon" style="text-decoration: none; color: white;" aria-label="Follow TSF Media on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/tsfmedia_?igsh=MXdyYXo0bTB4ODJiZA==" target="_blank" rel="noopener noreferrer" class="social-icon" style="text-decoration: none; color: white;" aria-label="Follow TSF Media on Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 The Social Flex Media. All rights reserved.
+        </div>
+    </footer>
+
+    <div class="call-btn" onclick="window.open('https://wa.me/917987508554', '_blank')" aria-label="Quick Contact via WhatsApp" role="button" tabindex="0"></div>
+
+    <script>
+        /*
+        ============================================
+        SIMPLE FILE UPLOAD SOLUTION
+        ============================================
+        
+        Option 1: Use Web3Forms (Free, supports file uploads)
+        --------------------------------------------
+        1. Go to: https://web3forms.com/
+        2. Enter your email: thesocialflexmedia888@gmail.com
+        3. Get your Access Key
+        4. Replace 'YOUR_WEB3FORMS_ACCESS_KEY' below with your key
+        
+        Option 2: Use FormSubmit (Free, supports file uploads)
+        --------------------------------------------
+        1. Go to: https://formsubmit.co/
+        2. Use endpoint: https://formsubmit.co/thesocialflexmedia888@gmail.com
+        3. No API key needed!
+        
+        ============================================
+        */
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            const applyModal = document.getElementById('applyModal');
+            const closeApplyModal = document.getElementById('closeApplyModal');
+            const applyForm = document.getElementById('applyForm');
+            const roleField = document.getElementById('roleField');
+            const roleLabel = document.getElementById('roleLabel');
+            const applyButtons = document.querySelectorAll('.apply-btn');
+
+            applyButtons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const role = btn.dataset.role || 'Open Role';
+                    roleField.value = role;
+                    document.getElementById('emailSubject').value = 'New Job Application: ' + role;
+                    roleLabel.textContent = `for ${role}`;
+                    applyModal.classList.add('active');
+                });
+            });
+
+            closeApplyModal.addEventListener('click', () => {
+                applyModal.classList.remove('active');
+            });
+
+            applyModal.addEventListener('click', (e) => {
+                if (e.target === applyModal) {
+                    applyModal.classList.remove('active');
+                }
+            });
+
+            // Update reply-to when email changes
+            const applicantEmailInput = document.getElementById('applicantEmail');
+            if (applicantEmailInput) {
+                applicantEmailInput.addEventListener('change', function() {
+                    document.getElementById('replyTo').value = this.value;
+                });
+            }
+
+            applyForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const btn = applyForm.querySelector('.submit-btn');
+                const originalText = btn.innerText;
+                btn.innerText = 'Submitting...';
+                btn.disabled = true;
+
+                try {
+                    const formData = new FormData(applyForm);
+                    const resumeFile = formData.get('resume');
+                    
+                    // Validate file
+                    if (!resumeFile || resumeFile.size === 0) {
+                        alert('Please attach your resume (PDF file).');
+                        btn.innerText = originalText;
+                        btn.disabled = false;
+                        return;
+                    }
+
+                    // Check file size (max 10MB)
+                    const maxSize = 10 * 1024 * 1024; // 10MB
+                    if (resumeFile.size > maxSize) {
+                        alert('File size is too large. Please upload a file smaller than 10MB.');
+                        btn.innerText = originalText;
+                        btn.disabled = false;
+                        return;
+                    }
+
+                    // Check file type
+                    const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+                    const allowedExtensions = ['.pdf', '.doc', '.docx'];
+                    const fileName = resumeFile.name.toLowerCase();
+                    const hasValidExtension = allowedExtensions.some(ext => fileName.endsWith(ext));
+                    
+                    if (!allowedTypes.includes(resumeFile.type) && !hasValidExtension) {
+                        alert('Please upload a PDF or Word document (.pdf, .doc, .docx)');
+                        btn.innerText = originalText;
+                        btn.disabled = false;
+                        return;
+                    }
+
+                    // Update reply-to field
+                    const emailValue = formData.get('email');
+                    if (emailValue) {
+                        document.getElementById('replyTo').value = emailValue;
+                    }
+
+                    // Update subject with role
+                    const roleValue = formData.get('role');
+                    if (roleValue) {
+                        document.getElementById('emailSubject').value = 'New Job Application: ' + roleValue;
+                    }
+
+                    console.log('File details:', {
+                        name: resumeFile.name,
+                        size: (resumeFile.size / 1024 / 1024).toFixed(2) + ' MB',
+                        type: resumeFile.type
+                    });
+
+                    // Submit using fetch with proper handling
+                    const response = await fetch("https://formsubmit.co/ajax/thesocialflexmedia888@gmail.com", {
+                        method: "POST",
+                        body: formData
+                    });
+
+                    console.log('Response status:', response.status);
+
+                    if (response.ok) {
+                        const responseText = await response.text();
+                        console.log('Response:', responseText);
+                        
+                        try {
+                            const data = JSON.parse(responseText);
+                            if (data.success || response.status === 200) {
+                                alert('Application submitted successfully! We will review your resume and get back to you soon.');
+                                applyModal.classList.remove('active');
+                                applyForm.reset();
+                                return;
+                            }
+                        } catch (parseError) {
+                            // If response is HTML (redirect page), consider it success
+                            if (responseText.includes('success') || responseText.includes('Thank you') || response.status === 200) {
+                                alert('Application submitted successfully! We will review your resume and get back to you soon.');
+                                applyModal.classList.remove('active');
+                                applyForm.reset();
+                                return;
+                            }
+                        }
+                    }
+
+                    // If we get here, there was an error
+                    const responseText = await response.text();
+                    let errorMessage = 'There was a problem submitting your application.';
+                    try {
+                        const data = JSON.parse(responseText);
+                        errorMessage = data.message || errorMessage;
+                    } catch (e) {
+                        // Use default error message
+                    }
+                    alert(errorMessage + '\n\nPlease try again or contact us directly at thesocialflexmedia888@gmail.com');
+                    
+                } catch (error) {
+                    console.error('Error details:', error);
+                    alert('Technical error: ' + error.message + '\n\nPlease check your internet connection and try again.\n\nYou can also email your resume directly to: thesocialflexmedia888@gmail.com');
+                } finally {
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

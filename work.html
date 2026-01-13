@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work - TSF Media</title>
+    <link rel="icon" type="image/jpeg" href="LOGOTSF.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .work-section {
+            padding: 80px 50px;
+            background: #000000;
+            min-height: 100vh;
+        }
+
+        .work-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .work-header h2 {
+            font-size: 48px;
+            color: #ff0000;
+            margin-bottom: 20px;
+        }
+
+        .work-header p {
+            font-size: 18px;
+            color: #cccccc;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .jewellery-section {
+            margin-top: 60px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .video-card {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 9/16;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            background: #1a1a1a;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .video-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
+        }
+
+        .video-card video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .video-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            opacity: 1;
+            transition: opacity 0.3s;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .video-card:hover::before {
+            opacity: 0;
+        }
+
+        .video-card:hover video {
+            filter: brightness(1.1);
+        }
+
+        .video-card video {
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <div class="logo-icon">
+                <img class=image src="LOGOTSF.jpg" alt="logo" width="58px" height="58px">
+            </div>
+            <div>
+                <h1>TSFMEDIA</h1>
+                <div class="logo-subtitle">The Social Flex Media</div>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#about">ABOUT US</a></li>
+            <li><a href="index.html#services">SERVICES</a></li>
+            <li><a href="work.html">WORK</a></li>
+            <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+            <li><a href="careers.html">CAREERS</a></li>
+            <li><a href="index.html" class="contact-trigger">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!-- Work Section -->
+    <section class="work-section">
+        <div class="work-header">
+            <h2>Our Work</h2>
+            <p>Explore our portfolio of creative projects and see the results we've delivered for our clients.</p>
+        </div>
+
+        <!-- Jewellery Section -->
+        <div class="jewellery-section">
+            <h3 class="section-title">Jewellery</h3>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Jwellery%20section/Vdo1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Jwellery%20section/Vdo2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Jwellery%20section/Vdo3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Jwellery%20section/Vdo4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Jwellery%20section/Vdo5.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Jwellery%20section/Vdo6.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Jwellery%20section/Vdo7.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Jwellery%20section/Vdo8.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Jwellery%20section/Vdo9.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cloth Section -->
+        <div class="jewellery-section" style="margin-top: 80px;">
+            <h3 class="section-title">Cloth</h3>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Cloth%20Section/Vdo1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Cloth%20Section/Vdo2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Cloth%20Section/Vdo3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Cloth%20Section/Vdo4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Cloth%20Section/Vdo5.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Cloth%20Section/Vdo6.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Cloth%20Section/Vdo7.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- Food Section -->
+        <div class="jewellery-section" style="margin-top: 80px;">
+            <h3 class="section-title">Food</h3>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Food%20Section/Vdo1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Food%20Section/Vdo2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Food%20Section/Vdo3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Food%20Section/Vdo4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Food%20Section/Vdo5.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Food%20Section/Vdo6.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Food%20Section/Vdo7.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Food%20Section/Vdo8.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Food%20Section/Vdo9.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video muted loop>
+                        <source src="Food%20Section/Vdo10.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section footer-logo-section">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">
+                        <img src="LOGOTSF.jpg" alt="TSF Logo"
+                            style="width: 100%; height: 100%; border-radius: 15px; object-fit: cover;">
+                    </div>
+                    <h3>TSFMEDIA</h3>
+                </div>
+                <p style="color: #ccc;">Your Digital Marketing Partner.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html" class="contact-trigger">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://wa.me/917987508554" target="_blank" class="social-icon"
+                        style="text-decoration: none; color: white;"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/tsfmedia_?igsh=MXdyYXo0bTB4ODJiZA==" target="_blank"
+                        class="social-icon" style="text-decoration: none; color: white;"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 The Social Flex Media. All rights reserved.
+        </div>
+    </footer>
+
+    <div class="call-btn" onclick="window.open('https://wa.me/917987508554', '_blank')"></div>
+
+    <script>
+        // Video hover play functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoCards = document.querySelectorAll('.video-card');
+            
+            videoCards.forEach(card => {
+                const video = card.querySelector('video');
+                
+                // Play video on hover
+                card.addEventListener('mouseenter', function() {
+                    video.play();
+                });
+                
+                // Pause video when mouse leaves
+                card.addEventListener('mouseleave', function() {
+                    video.pause();
+                    video.currentTime = 0; // Reset to beginning
+                });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

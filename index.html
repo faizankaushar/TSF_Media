@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TSF Media - Leading digital marketing agency offering website development, social media management, Meta ads, SEO, content creation, and comprehensive digital marketing solutions. Founded in 2018 by Ivan Lewis.">
+    <meta name="keywords" content="digital marketing, social media management, Meta ads, Facebook ads, Instagram ads, website development, SEO, content creation, digital marketing agency, social media marketing, online marketing, brand strategy">
+    <meta name="author" content="The Social Flex Media">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tsfmedia.com/">
+    <meta property="og:title" content="TSF Media - Your Digital Marketing Partner | The Social Flex Media">
+    <meta property="og:description" content="Leading digital marketing agency offering website development, social media management, Meta ads, SEO, and comprehensive digital marketing solutions.">
+    <meta property="og:image" content="LOGOTSF.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tsfmedia.com/">
+    <meta property="twitter:title" content="TSF Media - Your Digital Marketing Partner">
+    <meta property="twitter:description" content="Leading digital marketing agency offering website development, social media management, Meta ads, SEO, and comprehensive digital marketing solutions.">
+    <meta property="twitter:image" content="LOGOTSF.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tsfmedia.com/">
+    
+    <title>The Social Flex Media - Your Digital Marketing Partner | TSF Media</title>
+    <link rel="icon" type="image/jpeg" href="LOGOTSF.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "The Social Flex Media",
+        "alternateName": "TSF Media",
+        "url": "https://tsfmedia.com",
+        "logo": "https://tsfmedia.com/LOGOTSF.jpg",
+        "description": "Leading digital marketing agency offering website development, social media management, Meta ads, SEO, and comprehensive digital marketing solutions.",
+        "foundingDate": "2018",
+        "founder": {
+            "@type": "Person",
+            "name": "Ivan Lewis"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-79875-08554",
+            "contactType": "customer service",
+            "email": "thesocialflexmedia888@gmail.com",
+            "availableLanguage": "English"
+        },
+        "sameAs": [
+            "https://www.instagram.com/tsfmedia_",
+            "https://wa.me/917987508554"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IN"
+        },
+        "areaServed": "Worldwide",
+        "serviceType": [
+            "Digital Marketing",
+            "Social Media Management",
+            "Website Development",
+            "Meta Ads",
+            "SEO",
+            "Content Creation",
+            "E-commerce Development",
+            "Mobile App Development"
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "TSF Media",
+        "url": "https://tsfmedia.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://tsfmedia.com/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <div class="modal-header">
+                <h2>Let's Talk Business</h2>
+                <p>Fill out the form below and we'll get back to you shortly.</p>
+            </div>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="contact-email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="contact-phone" name="phone" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <textarea rows="4" id="contact-message" name="message" placeholder="How can we help you?"
+                        required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <div class="logo-icon">
+                <img class=image src="LOGOTSF.jpg" alt="TSF Media Logo - The Social Flex Media" width="58px" height="58px">
+            </div>
+            <div>
+                <div class="logo-title">TSFMEDIA</div>
+                <div class="logo-subtitle">The Social Flex Media</div>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about" aria-label="About Us Section">ABOUT US</a></li>
+            <li><a href="#services" aria-label="Services Section">SERVICES</a></li>
+            <li><a href="work.html" aria-label="View Our Work Portfolio">WORK</a></li>
+            <li><a href="#portfolio" aria-label="Portfolio Section">PORTFOLIO</a></li>
+            <li><a href="careers.html" aria-label="Career Opportunities">CAREERS</a></li>
+            <li><a href="#" class="contact-trigger" aria-label="Contact Us">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>
+                Your Go-To <span class="highlight">Digital Marketing Partner</span><br>
+                for <span class="highlight">Innovative</span> and <span class="highlight">Results-Driven</span>
+                Solutions
+            </h1>
+            <p>Because in the digital world, flexibility is key!</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="logo-large">
+                <img class=image src="LOGOTSF.jpg" alt="TSF Media - The Social Flex Media Digital Marketing Agency" width="240px" height="240px">
+            </div>
+            <div class="about-text">
+                <h2>The Social Flex Media</h2>
+                <h3>Welcome to TSFMEDIA</h3>
+                <p>Welcome to The Social Flex Media, your go-to digital marketing partner for innovative and
+                    results-driven solutions. Founded in 2018 by Ivan Lewis, we specialize in helping businesses grow
+                    their online presence through cutting-edge strategies tailored to their unique needs.</p>
+                <p>At The Social Flex Media, we offer a wide range of service-based digital marketing solutions,
+                    including social media management, content creation, brand strategy, and more.</p>
+                <div class="founder-info">
+                    <p>Founder: Ivan Lewis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-header">
+            <h2>Our Services</h2>
+            <div class="services-intro">
+                At TSFMedia, we offer a wide range of top-tier digital solutions to help your business grow. Our expert
+                team is dedicated to providing innovative services tailored to your specific needs. Whether you're
+                looking for a powerful website, mobile app, or custom software solution, we have you covered.
+            </div>
+        </div>
+        <div class="services-container">
+            <div class="service-category">
+                <h3 class="category-title">Development & Design</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Website Development</h3>
+                        <p>We specialize in building user-friendly, dynamic websites using popular platforms like
+                            WordPress and Shopify, as well as custom websites tailored to your business.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Mobile App Development</h3>
+                        <p>We develop robust, high-performing mobile applications for both iOS and Android, ensuring
+                            seamless user experiences and reliable functionality.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛍️</div>
+                        <h3>E-commerce Development</h3>
+                        <p>We create fully integrated online store solutions that cater to your unique needs, from
+                            product pages to secure payment gateways.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h3>Meta Ads</h3>
+                        <p>Maximize your reach and ROI with strategic Meta advertising campaigns across Facebook and Instagram. We create targeted, data-driven ad campaigns that convert, optimize your ad spend, and scale your business through advanced targeting and A/B testing.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h3>Social Media Management</h3>
+                        <p>Elevate your brand's online presence with comprehensive social media management. We handle content creation, community engagement, scheduling, analytics, and strategy across all major platforms to build your audience and drive meaningful interactions.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⚙️</div>
+                        <h3>Digital Marketing</h3>
+                        <p>Comprehensive digital marketing solutions that drive growth and maximize your online visibility. From SEO and content marketing to email campaigns and conversion optimization, we create integrated strategies that deliver measurable results and boost your bottom line.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🌟</div>
+                        <h3>Influencer Marketing</h3>
+                        <p>Connect with your target audience through strategic influencer partnerships that amplify your brand message and drive authentic engagement.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📸</div>
+                        <h3>Professional Shoot</h3>
+                        <p>Professional photography and videography services to capture your brand's essence and create compelling visual content that stands out.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <h3 class="category-title">Specialized Solutions</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🤖</div>
+                        <h3>AI & Chatbot Development</h3>
+                        <p>Boost efficiency with AI-powered chatbots and automation solutions that handle customer
+                            service, automate tasks, and enhance engagement.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔌</div>
+                        <h3>API Development & Integration</h3>
+                        <p>Our API development services ensure your systems work together seamlessly, creating a unified
+                            workflow that reduces friction.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📦</div>
+                        <h3>E-commerce Platform Management</h3>
+                        <p>From handling inventory to optimizing listings, we offer comprehensive management for
+                            platforms like Amazon, Flipkart, and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By / Clients Section -->
+    <section class="clients-section" id="portfolio"
+        style="background: #000000; padding: 50px 50px; text-align: center;">
+        <h2 style="font-size: 36px; color: #ff0000; margin-bottom: 40px;">Trusted By Top Brands</h2>
+        <div class="clients-grid"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; align-items: center;">
+            <div class="client-logo"><img src="1.jpg" alt="TSF Media Client - Trusted Brand Partner"
+                    style="width: 100%; max-width: 150px; border-radius: 10px; filter: grayscale(100%); transition: filter 0.3s;">
+            </div>
+            <div class="client-logo"><img src="2.jpg" alt="TSF Media Client - Trusted Brand Partner"
+                    style="width: 100%; max-width: 150px; border-radius: 10px; filter: grayscale(100%); transition: filter 0.3s;">
+            </div>
+            <div class="client-logo"><img src="3.jpg" alt="TSF Media Client - Trusted Brand Partner"
+                    style="width: 100%; max-width: 150px; border-radius: 10px; filter: grayscale(100%); transition: filter 0.3s;">
+            </div>
+            <div class="client-logo"><img src="4.jpg" alt="TSF Media Client - Trusted Brand Partner"
+                    style="width: 100%; max-width: 150px; border-radius: 10px; filter: grayscale(100%); transition: filter 0.3s;">
+            </div>
+            <div class="client-logo"><img src="5.jpg" alt="TSF Media Client - Trusted Brand Partner"
+                    style="width: 100%; max-width: 150px; border-radius: 10px; filter: grayscale(100%); transition: filter 0.3s;">
+            </div>
+            <div class="client-logo"><img src="6.jpg" alt="TSF Media Client - Trusted Brand Partner"
+                    style="width: 100%; max-width: 150px; border-radius: 10px; filter: grayscale(100%); transition: filter 0.3s;">
+            </div>
+        </div>
+        <style>
+            .client-logo img:hover {
+                filter: grayscale(0%) !important;
+                transform: scale(1.1);
+            }
+        </style>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-header">
+            <h2>Ready to Grow?</h2>
+            <p>Choose the plan that fits your needs.</p>
+        </div>
+        <div class="cta-grid">
+            <div class="cta-card red">
+                <h3>Starter</h3>
+                <p>Perfect for small businesses getting started.</p>
+                <button class="cta-btn">Get Started</button>
+            </div>
+            <div class="cta-card blue">
+                <h3>Growth</h3>
+                <p>For businesses looking to scale up.</p>
+                <button class="cta-btn">Get Started</button>
+            </div>
+            <div class="cta-card purple">
+                <h3>Enterprise</h3>
+                <p>Complete comprehensive solutions.</p>
+                <button class="cta-btn contact-trigger">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <div class="contact-subtitle">Get in touch with us today!</div>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email Us</h3>
+                    <p><a href="mailto:thesocialflexmedia888@gmail.com" aria-label="Email TSF Media">thesocialflexmedia888@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <h3>WhatsApp / Call</h3>
+                    <p><a href="https://wa.me/917987508554" target="_blank" rel="noopener noreferrer" aria-label="Contact TSF Media on WhatsApp">+91 79875 08554</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section footer-logo-section">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">
+                        <img src="LOGOTSF.jpg" alt="TSF Media Logo - The Social Flex Media Digital Marketing"
+                            style="width: 100%; height: 100%; border-radius: 15px; object-fit: cover;">
+                    </div>
+                    <h3>TSFMEDIA</h3>
+                </div>
+                <p style="color: #ccc;">Your Digital Marketing Partner.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#" class="contact-trigger">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://wa.me/917987508554" target="_blank" rel="noopener noreferrer" class="social-icon"
+                        style="text-decoration: none; color: white;" aria-label="Follow TSF Media on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/tsfmedia_?igsh=MXdyYXo0bTB4ODJiZA==" target="_blank" rel="noopener noreferrer"
+                        class="social-icon" style="text-decoration: none; color: white;" aria-label="Follow TSF Media on Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 The Social Flex Media. All rights reserved.
+        </div>
+    </footer>
+
+    <div class="call-btn" onclick="window.open('https://wa.me/917987508554', '_blank')" aria-label="Quick Contact via WhatsApp" role="button" tabindex="0"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
